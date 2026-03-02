@@ -1,0 +1,6 @@
+@import "tailwindcss"
+
+@theme {
+    --color-button-green:#adba8f;
+    --font-logo: 'Open Sans', sans-serif;
+}
