@@ -1,5 +1,12 @@
 @import "tailwindcss";
 @theme {
-    --color-button-green:#adba8f;
-    --font-logo: 'Open Sans', sans-serif;
+  --color-button-green: #adba8f;
+  --font-logo: "Open Sans", sans-serif;
+}
+
+@font-face {
+  font-family: "Healing";
+  src: url("./assets/fonts/Healing-BF652e93e256678.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
 }
