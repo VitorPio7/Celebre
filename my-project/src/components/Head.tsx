@@ -30,7 +30,7 @@ export default function Header({ logo, titleHead: title }: MyHeader) {
         </ul>
       </div>
       <div className="place-self-end pr-8">
-        <button className=" bg-button-green w-32 text-center  items-center left h-12 rounded-full  text-white ">
+        <button className="cursor-pointer bg-button-green w-32 text-center  items-center left h-12 rounded-full  text-white ">
           {" "}
           Saiba mais
         </button>
