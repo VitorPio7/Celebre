@@ -1,23 +1,32 @@
-import { Carousel,  } from "@material-tailwind/react";
+import { Card, CardContent } from "@/components/ui/card";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 export function CarouselTransition() {
   return (
-    <Carousel className="rounded-xl">
-      <img
-        src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2560&q=80"
-        alt="image 1"
-        className="h-full w-full object-cover"
-      />
-      <img
-        src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
-        alt="image 2"
-        className="h-full w-full object-cover"
-      />
-      <img
-        src="https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2762&q=80"
-        alt="image 3"
-        className="h-full w-full object-cover"
-      />
+    <Carousel className="w-full sm:max-w-xl md:max-w-4xl">
+      <CarouselContent>
+        {Array.from({ length: 5 }).map((_, index) => (
+          <CarouselItem key={index} className="basis-1/2 lg:basis-1/3">
+            <Card className="border-none shadow-none">
+              <CardContent className="p-0">
+                <img
+                  src={`image${index + 3}.jpeg`}
+                  className="w-full h-48 object-cover rounded-xl"
+                />
+              </CardContent>
+            </Card>
+          </CarouselItem>
+        ))}
+      </CarouselContent>
+
+      <CarouselPrevious />
+      <CarouselNext />
     </Carousel>
   );
 }
