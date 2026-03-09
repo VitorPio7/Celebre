@@ -9,6 +9,7 @@ export default {
       fontFamily: {
         logo: ['Open Sans', 'sans-serif'],
         healing: ['Healing', 'sans-serif'],
+        serif: ['Playfair Display', 'serif'],
       },
       colors: {
         primary: '#ff0000',

@@ -1,3 +1,4 @@
+import Button2 from "./ui/button2";
 interface LinkMyHeader{
   title: string,
   link: string
@@ -9,7 +10,7 @@ interface MyHeader {
 
 export default function Header({ logo, titleHead: title }: MyHeader) {
   return (
-    <nav className="grid grid-cols-2 items-center h-12 pl-16 gap-10 pt-4 pr-2 ">
+    <nav className=" font-sans grid grid-cols-2 items-center h-12 pl-16 gap-10 pt-4 pr-2  ">
       <div className="flex gap-7 ">
         <p className="tracking-widest   basi justify-center justify-items-center items-center  ">
           {logo}
@@ -30,10 +31,7 @@ export default function Header({ logo, titleHead: title }: MyHeader) {
         </ul>
       </div>
       <div className="place-self-end pr-8">
-        <button className="cursor-pointer bg-button-green w-32 text-center  items-center left h-12 rounded-full  text-white ">
-          {" "}
-          Saiba mais
-        </button>
+        <Button2 description="Saiba mais" />
       </div>
     </nav>
   );

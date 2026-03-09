@@ -1,5 +1,8 @@
 import "./App.css";
+
 import BodyCarrossel from "./components/BodyCarrossel.tsx";
+
+import BodyGalery from "./components/BodyGalery.tsx";
 
 import Head from "./components/Head.tsx";
 
@@ -33,11 +36,14 @@ function App() {
     },
   ];
   return (
-    <div className=" font-sans  text-gray-500">
+    <>
       <Head logo="CELEBRE" titleHead={titleHead} />
-      <VideoHead />
-      <BodyCarrossel />
-    </div>
+      <body className=" font-serif">
+        <VideoHead />
+        <BodyCarrossel />
+        <BodyGalery />
+      </body>
+    </>
   );
 }
 
