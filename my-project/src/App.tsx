@@ -1,6 +1,6 @@
 import "./App.css";
 
-import BodyCarrossel from "./components/BodyCarrossel.tsx";
+import BodyCarousel from "./components/BodyCarousel.tsx";
 
 import BodyGalery from "./components/BodyGalery.tsx";
 
@@ -36,14 +36,14 @@ function App() {
     },
   ];
   return (
-    <>
+    <div className="no-scrollbar overflow-y-auto">
       <Head logo="CELEBRE" titleHead={titleHead} />
       <body className=" font-serif">
         <VideoHead />
-        <BodyCarrossel />
+        <BodyCarousel />
         <BodyGalery />
       </body>
-    </>
+    </div>
   );
 }
 
