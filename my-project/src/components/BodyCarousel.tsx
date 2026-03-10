@@ -16,7 +16,7 @@ export default function BodyCarrossel() {
       <div className=" font-sans flex flex-col items-center lg:flex-row lg:h-64 w-full gap-24 lg:gap-28 justify-center mb-14">
         <div className="flex flex-col items-center justify-center text-center max-w-80 px-0 py-0 gap-0">
           <BsMoonStars className="w-10 lg:w-12 h-12 mb-5" />
-          <p className="font font-medium mb-1.5">Personalize o seu evento</p>
+          <p className="font-medium mb-1.5">Personalize o seu evento</p>
           <p className="text-gray-600">
             Planeje cada detalhe da sua festa com nossa equipe especializada.
             Criamos experiências únicas que transformam momentos especiais em

@@ -6,6 +6,8 @@ import BodyGalery from "./components/BodyGalery.tsx";
 
 import Head from "./components/Head.tsx";
 
+import FadeInSection from "./components/ui/fadeInSection.tsx";
+
 import VideoHead from "./components/VideoHead.tsx";
 
 function App() {
@@ -39,9 +41,15 @@ function App() {
     <div className="no-scrollbar overflow-y-auto">
       <Head logo="CELEBRE" titleHead={titleHead} />
       <body className=" font-serif">
-        <VideoHead />
-        <BodyCarousel />
-        <BodyGalery />
+        <FadeInSection>
+          <VideoHead />
+        </FadeInSection>
+        <FadeInSection>
+          <BodyCarousel />
+        </FadeInSection>
+        <FadeInSection>
+          <BodyGalery />
+        </FadeInSection>
       </body>
     </div>
   );
