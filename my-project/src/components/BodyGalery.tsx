@@ -1,7 +1,7 @@
 import CardOverview from "./ui/cardOverview";
 export default function BodyGallery() {
     return (
-      <div className="p-9">
+      <section className="p-9">
         <div>
           <h1 className="text-4xl">Encontre a celebração perfeita para o seu momento</h1>
           <p className="text-gray-600 font-sans mt-4 max-w-[480px] mb-8">
@@ -31,6 +31,6 @@ export default function BodyGallery() {
             description="Realize seu evento corporativo com excelência."
           />
         </div>
-      </div>
+      </section>
     );
 }

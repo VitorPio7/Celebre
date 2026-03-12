@@ -5,7 +5,7 @@ import Button2 from "./ui/button2";
 
 export default function BodyCarrossel() {
   return (
-    <div className="flex flex-col items-center justify-center text-center px-0 py-0 gap-0">
+    <section className="flex flex-col items-center justify-center text-center px-0 py-0 gap-0">
       <img src="carrosel-fundo.png" className="w-2xs  lg:w-125" />
       <h1 className=" text-2xl max-w-lg lg:text-4xl font-light ">
         Organize o seu espaço de forma criativa
@@ -43,6 +43,6 @@ export default function BodyCarrossel() {
         </div>
       </div>
       <Button2 description="Contato" />
-    </div>
+    </section>
   );
 }

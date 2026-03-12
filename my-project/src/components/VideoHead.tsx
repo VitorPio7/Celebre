@@ -1,7 +1,7 @@
 import Button2 from "./ui/button2";
 export default function VideoHead() {
   return (
-    <div className="relative ml h-[90vh] overflow-hidden">
+    <section className="relative ml h-[90vh] overflow-hidden">
       <video
         className=" p-3  absolute  inset-0 w-full h-5/6 object-cover brightness-75 lg:pl-9 lg:pr-9 lg:pt-9 z-0 "
         loop
@@ -25,6 +25,6 @@ export default function VideoHead() {
 
         <Button2 description="Fale conosco" />
       </div>
-    </div>
+    </section>
   );
 }

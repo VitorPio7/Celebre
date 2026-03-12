@@ -4,11 +4,13 @@ import BodyCarousel from "./components/BodyCarousel.tsx";
 
 import BodyGalery from "./components/BodyGalery.tsx";
 
-import Head from "./components/Head.tsx";
+import Head from "./components/Heading.tsx";
 
 import FadeInSection from "./components/ui/fadeInSection.tsx";
 
 import VideoHead from "./components/VideoHead.tsx";
+
+import ContacUsSection from "./components/ContactUsSection.tsx";
 
 function App() {
   const titleHead = [
@@ -40,17 +42,18 @@ function App() {
   return (
     <div className="no-scrollbar overflow-y-auto">
       <Head logo="CELEBRE" titleHead={titleHead} />
-      <body className=" font-serif">
-        <FadeInSection>
-          <VideoHead />
-        </FadeInSection>
-        <FadeInSection>
-          <BodyCarousel />
-        </FadeInSection>
-        <FadeInSection>
-          <BodyGalery />
-        </FadeInSection>
-      </body>
+      <FadeInSection>
+        <VideoHead />
+      </FadeInSection>
+      <FadeInSection>
+        <BodyCarousel />
+      </FadeInSection>
+      <FadeInSection>
+        <BodyGalery />
+      </FadeInSection>
+      <FadeInSection>
+        <ContacUsSection />
+      </FadeInSection>
     </div>
   );
 }
